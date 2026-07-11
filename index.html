@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDdevelopers | Software Engineering & Project Management</title>
+    <meta name="description" content="MDdevelopers (led by Moin uddin) delivers high-performance software engineering, web development, and professional project management services.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Technical Blueprint Ambient Backdrop -->
+    <div class="ambient-glow-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Mobile Top Header (Hidden on Desktop) -->
+    <header class="mobile-header">
+        <a href="#hero" class="logo-container" style="margin-bottom: 0;">
+            <svg class="logo-svg" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" stroke="url(#logoTealOrange)" stroke-width="3" stroke-dasharray="6 4" />
+              <path d="M 25 70 L 25 30 L 45 55 L 50 48" stroke="url(#logoTeal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M 50 48 L 55 55 L 65 70 L 75 70 C 85 70 85 30 75 30 L 55 30 L 50 30" stroke="url(#logoOrange)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="logo-text-wrapper">
+                <span class="logo-brand" style="font-size: 1.1rem;">MD<span>developers</span></span>
+            </div>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+            <i data-lucide="menu"></i>
+        </button>
+    </header>
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <!-- Brand Logo -->
+        <a href="#hero" class="logo-container">
+            <svg class="logo-svg" width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer Hexagon Grid -->
+              <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" stroke="url(#logoTealOrange)" stroke-width="3" stroke-dasharray="6 4" />
+              
+              <!-- Letter M (Teal Gradient) -->
+              <path d="M 25 70 L 25 30 L 45 55 L 50 48" stroke="url(#logoTeal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+              
+              <!-- Letter D (Orange Gradient) -->
+              <path d="M 50 48 L 55 55 L 65 70 L 75 70 C 85 70 85 30 75 30 L 55 30 L 50 30" stroke="url(#logoOrange)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+              
+              <!-- Color Definitions -->
+              <defs>
+                <linearGradient id="logoTealOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00f2fe" />
+                  <stop offset="100%" stop-color="#ff7a00" />
+                </linearGradient>
+                <linearGradient id="logoTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00f2fe" />
+                  <stop offset="100%" stop-color="#0080ff" />
+                </linearGradient>
+                <linearGradient id="logoOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff9d00" />
+                  <stop offset="100%" stop-color="#ff3c00" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="logo-text-wrapper">
+                <span class="logo-brand">MD<span>developers</span></span>
+                <span class="logo-sub">Tech Laboratory</span>
+            </div>
+        </a>
+
+        <!-- Vertical Menu Navigation -->
+        <nav class="sidebar-menu">
+            <a href="#hero" class="nav-link active"><i data-lucide="home"></i> Home</a>
+            <a href="#approach" class="nav-link"><i data-lucide="compass"></i> Our Philosophy</a>
+            <a href="#services" class="nav-link"><i data-lucide="layers"></i> Services</a>
+            <a href="#seo-calculator" class="nav-link"><i data-lucide="calculator"></i> SEO Calculator</a>
+            <a href="#contact" class="nav-link"><i data-lucide="mail"></i> Contact</a>
+        </nav>
+
+        <!-- Sidebar Footer Slogan -->
+        <div class="sidebar-footer">
+            <div class="sidebar-slogan-card">
+                <p><strong>Our Promise:</strong>"We don't care about your money, we care about you."</p>
+            </div>
+            <div class="sidebar-socials">
+                <a href="#" class="social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Canvas -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section section-active">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="badge"><i data-lucide="cpu"></i> Next-Gen Web Laboratory</span>
+                </div>
+                <h1 class="slogan">
+                    We don't care about your money, <br>
+                    <span class="highlight">we care about you.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Led by <strong>Moin uddin</strong>, MDdevelopers builds premium, high-performance web applications and software architectures, delivering state-of-the-art engineering, clean codebases, and professional project management.
+                </p>
+                <div class="hero-actions">
+                    <a href="#seo-calculator" class="btn btn-primary">Run Free SEO Audit <i data-lucide="calculator" class="icon-right"></i></a>
+                    <a href="#approach" class="btn btn-outline">Our Approach <i data-lucide="arrow-right" class="icon-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-footer-stats">
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Performance focus</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Direct manager access</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10x</h3>
+                    <p>Crawl & load acceleration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Philosophy Section -->
+        <section id="approach" class="approach-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Methodology</span>
+                    <h2>The Engineering Blueprint</h2>
+                    <p class="section-subtitle">We deliver scalable codebases, elegant user interfaces, and rigorous project management. Here is our delivery workflow.</p>
+                </div>
+                
+                <div class="approach-grid">
+                    <!-- Philosophy Details -->
+                    <div class="approach-text-card glass-card">
+                        <h3>Professional Project Execution</h3>
+                        <p>Most development agencies focus solely on billing hours. As a developer and manager, Moin uddin structures our projects around quality, durability, and commercial value. We engineer codebases to run fast, minimize server loads, and provide frictionless experiences that drive retention.</p>
+                        
+                        <div class="philosophy-points">
+                            <div class="point">
+                                <div class="point-icon"><i data-lucide="code-2"></i></div>
+                                <div>
+                                    <h4>Clean Architecture</h4>
+                                    <p>We write modular, maintainable code and configure databases to handle extensive query loads smoothly.</p>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <div class="point-icon"><i data-lucide="zap"></i></div>
+                                <div>
+                                    <h4>Responsive UI/UX</h4>
+                                    <p>Designing fast, responsive interfaces that load instantly and provide smooth visual execution across devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Timeline -->
+                    <div class="approach-steps">
+                        <div class="step-card glass-card" data-step="1">
+                            <span class="step-num">01</span>
+                            <h4>Analysis & Scope</h4>
+                            <p>Evaluating technical specifications and locking down project milestones.</p>
+                        </div>
+                        <div class="step-card glass-card" data-step="2">
+                            <span class="step-num">02</span>
+                            <h4>Architecture & UI Design</h4>
+                            <p>Mapping system data flows and designing highly intuitive, responsive layouts.</p>
+                        </div>
+                        <div class="step-card glass-card" data-step="3">
+                            <span class="step-num">03</span>
+                            <h4>Development & Integration</h4>
+                            <p>Writing clean, optimized code and implementing secure database and API connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Capabilities</span>
+                    <h2>Fields of Expertise</h2>
+                    <p class="section-subtitle">Professional engineering and project management customized to match your digital ambitions.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i data-lucide="globe"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Visually arresting, fully-responsive websites built using native HTML, CSS, and modern framework architectures. Optimized for maximum speed, security, and search engine discovery.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Custom Interactive Apps</li>
+                            <li><i data-lucide="check" class="check-icon"></i> E-commerce Architecture</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Dynamic Fluid Layouts</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i data-lucide="terminal"></i></div>
+                        <h3>Software Engineering</h3>
+                        <p>Robust desktop applications, secure database integrations, and automated pipelines engineered for high scalability and optimal runtime performance.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Custom RESTful API Design</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Database Management</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Automated Backups & Logic</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i data-lucide="settings"></i></div>
+                        <h3>Project Management</h3>
+                        <p>Agile developer coordination and product lifecycle management overseen directly by Moin, guaranteeing transparent timelines and clean delivery.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Agile Project Structuring</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Quality Assurance Auditing</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Maintenance & Support Plans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Calculator Section -->
+        <section id="seo-calculator" class="seo-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Interactive Tool</span>
+                    <h2>SEO Score & ROI Calculator</h2>
+                    <p class="section-subtitle">Measure the health score of your current site and simulate how technical performance upgrades translate to monthly growth.</p>
+                </div>
+
+                <div class="calculator-layout">
+                    <!-- Calculator Form Card -->
+                    <div class="calc-card glass-card">
+                        <div class="calc-tabs">
+                            <button class="calc-tab active" id="tab-audit">1. SEO Health Score</button>
+                            <button class="calc-tab" id="tab-roi">2. Business ROI Projection</button>
+                        </div>
+
+                        <!-- Tab 1: SEO Score Audit -->
+                        <div class="tab-content active" id="content-audit">
+                            <h3>Estimate Your Search Engine Readiness</h3>
+                            <p class="tab-desc">Toggle these technical checkboxes based on your site's current setup to calculate your baseline performance rating.</p>
+                            
+                            <div class="checklist-container">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="chk-ssl" checked>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        <strong>SSL Certificate Enabled (HTTPS)</strong>
+                                        <span class="subtext">Ensures secure data transport. A non-negotiable search ranking factor.</span>
+                                    </span>
+                                </label>
+
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="chk-mobile" checked>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        <strong>Responsive Layout Grid</strong>
+                                        <span class="subtext">Adapts perfectly to all viewports. Mobile is over 60% of search traffic.</span>
+                                    </span>
+                                </label>
+
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="chk-speed">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        <strong>Page Speed (Under 2 Seconds)</strong>
+                                        <span class="subtext">Fast loading decreases bounce rates and dramatically boosts indexing priority.</span>
+                                    </span>
+                                </label>
+
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="chk-meta">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        <strong>Structured Meta Tags & Heading Hierarchy</strong>
+                                        <span class="subtext">Accurate metadata and logical outline order help search spiders index your content.</span>
+                                    </span>
+                                </label>
+
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="chk-content">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        <strong>SEO Optimized Content</strong>
+                                        <span class="subtext">High-quality, search-optimized articles answering user queries directly.</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: ROI Calculator -->
+                        <div class="tab-content" id="content-roi">
+                            <h3>Organic Traffic & Conversion Projection</h3>
+                            <p class="tab-desc">Input your monthly metrics to project organic growth gains and calculate estimated ROI after MDdevelopers optimization.</p>
+                            
+                            <div class="roi-form">
+                                <div class="input-group">
+                                    <label for="input-traffic">Current Monthly Traffic</label>
+                                    <div class="input-wrapper">
+                                        <i data-lucide="users" class="input-icon"></i>
+                                        <input type="number" id="input-traffic" value="2500" min="0">
+                                    </div>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="input-conv-rate">Average Site Conversion Rate (%)</label>
+                                    <div class="input-wrapper">
+                                        <i data-lucide="percent" class="input-icon"></i>
+                                        <input type="number" id="input-conv-rate" value="1.5" step="0.1" min="0" max="100">
+                                    </div>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="input-value">Average Lifetime Value Per Customer ($)</label>
+                                    <div class="input-wrapper">
+                                        <span class="currency-symbol">$</span>
+                                        <input type="number" id="input-value" value="150" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculator Results Card -->
+                    <div class="results-card glass-card">
+                        <!-- Score View (Visible for Tab 1) -->
+                        <div class="results-section active" id="results-audit-view">
+                            <h3>Estimated SEO Score</h3>
+                            <div class="score-radial">
+                                <svg class="progress-ring" width="160" height="160">
+                                    <circle class="progress-ring__circle-bg" stroke="rgba(255, 255, 255, 0.04)" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+                                    <circle class="progress-ring__circle" stroke="url(#cyanOrangeGradient)" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+                                    <defs>
+                                        <linearGradient id="cyanOrangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#00f2fe" />
+                                            <stop offset="100%" stop-color="#ff7a00" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span class="score-display" id="score-text">60%</span>
+                            </div>
+                            <h4 id="score-label" class="score-status yellow">Needs Improvement</h4>
+                            <p id="score-advice" class="score-explanation">Basic technical components are active, but layout, content structure, or page speed issues are throttling your visibility.</p>
+                            
+                            <div class="audit-recommendations">
+                                <h5>Priority Optimization Actions:</h5>
+                                <ul id="audit-list">
+                                    <!-- Populated dynamically via JS -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- ROI View (Visible for Tab 2) -->
+                        <div class="results-section" id="results-roi-view">
+                            <h3>Projected Monthly Impact</h3>
+                            
+                            <div class="roi-stats-container">
+                                <div class="roi-stat-row">
+                                    <div class="roi-label">
+                                        <span>Organic Traffic Increase</span>
+                                        <small>Projected +150% indexing lift</small>
+                                    </div>
+                                    <div class="roi-val positive" id="roi-traffic">+3,750 visits</div>
+                                </div>
+
+                                <div class="roi-stat-row">
+                                    <div class="roi-label">
+                                        <span>New Customers</span>
+                                        <small>At your current conversion rate</small>
+                                    </div>
+                                    <div class="roi-val positive" id="roi-conversions">+56 clients</div>
+                                </div>
+
+                                <hr class="calc-divider">
+
+                                <div class="roi-stat-row highlight">
+                                    <div class="roi-label">
+                                        <span>Monthly Revenue Lift</span>
+                                        <small>Incremental monthly growth projection</small>
+                                    </div>
+                                    <div class="roi-val highlight" id="roi-revenue">+$8,437.50</div>
+                                </div>
+                            </div>
+
+                            <p class="roi-disclaimer">Estimates are based on average search visibility improvements. A polished, high-performance optimization by Moin uddin boosts retention and conversions.</p>
+                            <a href="#contact" class="btn btn-primary w-full text-center">Claim Your Technical Audit <i data-lucide="sparkles" class="icon-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2>Let's Build Your Project</h2>
+                    <p class="section-subtitle">Ready to optimize your tech platforms? Send a message to MDdevelopers. Moin responds personally within 24 hours.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Contact Cards info -->
+                    <div class="contact-info">
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Direct Gmail Address</h4>
+                                <p><a href="mailto:moinindustries1014@gmail.com" class="contact-link">www.moinindustries1014@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i data-lucide="globe-2"></i></div>
+                            <div>
+                                <h4>Global Operations</h4>
+                                <p>Remote Management & Remote Development Teams</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <h4>Corporate Philosophy</h4>
+                                <blockquote class="slogan-quote">"We don't care about your money, we care about you."</blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email Address</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Web Development / Software Management Project" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Project Parameters & Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Detail your project features, desired launch window, and technical requirements..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Deploy Message <i data-lucide="send" class="icon-right"></i></button>
+                        </form>
+                        <div id="form-success" class="form-alert success hide">
+                            <i data-lucide="check-circle" class="alert-icon"></i>
+                            <span>Message delivered successfully. Moin uddin will review your engineering requirements and reach out shortly.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sidebar Backdrop Overlay (Mobile) -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="footer-brand">
+                <span class="logo-brand" style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">
+                    MD<span style="color: var(--accent-primary);">developers</span>
+                </span>
+                <p style="margin-top: 1rem;">Designing high-performance web systems and scaling robust software projects, managed by Moin uddin.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Site Map</h4>
+                <a href="#hero">Home</a>
+                <a href="#approach">Our Philosophy</a>
+                <a href="#services">Services</a>
+                <a href="#seo-calculator">SEO Calculator</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom" style="max-width: 1200px; margin: 1.5rem auto 0; padding: 1.5rem 2rem 0;">
+            <p>&copy; 2026 MDdevelopers. All rights reserved. Slogan: <em>"We don't care about your money, we care about you."</em></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
